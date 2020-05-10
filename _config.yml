@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "muzammil-iftikhar.disqus.com" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "muzammil-iftikhar" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -85,18 +85,18 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "UA-166036020-1"
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Muzammil Iftikhar"
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "Data enthusiast. Learning with the machines :)"
+  location         : "Pakistan"
   email            :
   links:
     - label: "Email"
