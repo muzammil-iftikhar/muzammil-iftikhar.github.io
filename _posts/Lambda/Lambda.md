@@ -1,0 +1,268 @@
+---
+title:  "Lambda Expressions"
+date: 2020-05-11
+tags: [python]
+excerpt: "Learn the power of Lambda in Python"
+author_profile: true
+mathjax: "true"
+---
+
+# Lambda Expressions
+
+One of my favourite python feature is "Lambda Expressions".  
+Its vrey useful and powerful feature. You will use it in your Data science exploratory data analysis as well.  
+Lets get started:
+
+Let me show you the intitution behind Lambda expression:
+
+
+```python
+#Your normal sum function
+#very simple funtion, takes two inputs and returns the sum of both
+
+def add(x,y):
+    return x+y
+```
+
+
+```python
+#Calling the add function
+print(add(2,3))
+```
+
+    5
+    
+
+Now lets see how would we implement the same "add" function via **Lambda**:
+
+
+```python
+add = lambda x,y:x+y
+```
+
+
+```python
+print(add(2,3))
+```
+
+    5
+    
+
+Thats it. It is that simple. You will see the power of that expression later in future python tutorials as well.  
+
+
+### Three input parameters in Lambda
+
+Taking it a step further and implementing lambda for three input parameters
+
+
+```python
+add = lambda x,y,z: x+y+z
+```
+
+
+```python
+add(2,3,4)
+```
+
+
+
+
+    9
+
+
+
+### If-else in Lambda
+
+Lambda expression with if-else:
+
+
+```python
+#Normal implementation
+def even_odd(x):
+    if x%2==0:
+        return 'even'
+    else:
+        return 'odd'
+```
+
+
+```python
+even_odd(21)
+```
+
+
+
+
+    'odd'
+
+
+
+
+```python
+even_odd(22)
+```
+
+
+
+
+    'even'
+
+
+
+
+```python
+even_odd = lambda x:'even' if x%2==0 else 'odd'
+```
+
+
+```python
+even_odd(2)
+```
+
+
+
+
+    'even'
+
+
+
+
+```python
+even_odd(3)
+```
+
+
+
+
+    'odd'
+
+
+
+### Nested if-else in Lambda
+
+You can even go a step further to implement a nested if-else in lambda, but be careful with it as alot of experts don't recommend it this way because the deeper you go, the messier your code will get and it would leave a person reading your code confused.  
+**Lambda** expression with nested if-else:
+
+
+```python
+def equality_check(x,y):
+    if x>y:
+        return f'{x}>{y}'
+    elif x<y:
+        return f'{x}<{y}'
+    else:
+        return f'{x}={y}'
+```
+
+
+```python
+equality_check(2,1)
+```
+
+
+
+
+    '2>1'
+
+
+
+
+```python
+equality_check(50,50)
+```
+
+
+
+
+    '50=50'
+
+
+
+Now lets implement the same function in **Lambda**
+
+
+```python
+equality_check = lambda x,y: f'{x}>{y}' if x>y else (f'{x}<{y}' if x<y else f'{x}={y}')
+```
+
+
+```python
+equality_check(4,4)
+```
+
+
+
+
+    '4=4'
+
+
+
+
+```python
+equality_check(5,4)
+```
+
+
+
+
+    '5>4'
+
+
+
+
+```python
+equality_check(4,5)
+```
+
+
+
+
+    '4<5'
+
+
+
+I wouldn't recommend a nested if-else in **Lambda**. Rather a normal funcion definition would be much better in that case.
+
+### Reversing a string via Lambda expression
+
+
+```python
+reverse = lambda s:s[::-1]
+```
+
+
+```python
+reverse('hello world')
+```
+
+
+
+
+    'dlrow olleh'
+
+
+
+### Grabbing first letter of a string
+
+
+```python
+first = lambda s:s[0]
+```
+
+
+```python
+first('hello world')
+```
+
+
+
+
+    'h'
+
+
+
+
+```python
+
+```
