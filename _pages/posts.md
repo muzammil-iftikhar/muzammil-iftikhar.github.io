@@ -5,9 +5,10 @@ title:  "Posts by Tags"
 author_profile: true
 ---
 
-{% include base_path %}
-
-{% assign posts = group_items[forloop.index0] %}
-  {% for post in posts %}
-    {% include archive-single.html %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
+</ul>
