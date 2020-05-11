@@ -7,20 +7,36 @@ author_profile: true
 mathjax: "true"
 ---
 
+
 # Title
 
-This is first line
-And this is the second line
-This is the third line
+line 1
+line 2
+
 
 ```python
 hello = lambda x:"hello world"
 ```
 
-x+y\n
-%x+y%
-%x+%y
 
 ```python
 hello(2)
 ```
+
+
+
+
+    'hello world'
+
+
+
+This is also some markdown text
+
+This is also more markdown text
+
+This is the comitted markdown text
+
+Comitted text
+
+x + y
+
