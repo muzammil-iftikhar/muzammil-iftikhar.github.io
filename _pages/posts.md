@@ -1,7 +1,7 @@
 ---
 layout: archive
-permalink: /machine-learning/
-title:  "Machine Learning by Tags"
+permalink: /posts/
+title:  "Posts by Tags"
 author_profile: true
 ---
 
