@@ -3,4 +3,4 @@ title:  "About"
 permalink: /about/
 ---
 
-Busy learning with the machines
+When i am not sleeping, i am dreaming data :)
