@@ -1,7 +1,6 @@
 ---
 title:  "Numpy Basics"
 date: 2020-05-11
-layout: post
 tags: [python, numpy, data science, machine learning]
 excerpt: "Learn numpy basic"
 author_profile: true
