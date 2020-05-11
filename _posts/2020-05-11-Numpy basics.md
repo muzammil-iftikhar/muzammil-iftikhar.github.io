@@ -7,8 +7,17 @@ author_profile: true
 mathjax: "true"
 ---
 
-# Welcome
+# Title
 
-**Hello world**, this is my first Jekyll blog post.
+This is first line
+And this is the second line
 
-I hope you like it!
+
+```python
+hello = lambda x:"hello world"
+```
+
+
+```python
+hello(2)
+```
