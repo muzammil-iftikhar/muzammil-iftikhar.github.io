@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-author_profile: true
+title:  "Numpy Basics"
+date: 2020-05-11
+tags: [python, machine learning, data science, numpy]
+excerpt: Learn numpy basics
 ---
 
 # Welcome
