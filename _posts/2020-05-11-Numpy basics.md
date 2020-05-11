@@ -13,11 +13,16 @@ This is first line
 
 And this is the second line
 
+This is the third line
+
 
 ```python
 hello = lambda x:"hello world"
 ```
 
+x+y
+%x+y%
+%x+%y
 
 ```python
 hello(2)
