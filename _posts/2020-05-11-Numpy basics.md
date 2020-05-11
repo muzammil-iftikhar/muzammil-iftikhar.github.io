@@ -10,9 +10,6 @@ mathjax: "true"
 
 # Title
 
-line 1
-line 2
-
 
 ```python
 hello = lambda x:"hello world"
@@ -30,13 +27,12 @@ hello(2)
 
 
 
-This is also some markdown text
+Line 1
+Line 2
 
-This is also more markdown text
+Line 1  
+Line 2
 
-This is the comitted markdown text
+Line 1
 
-Comitted text
-
-x + y
-
+Line 2
