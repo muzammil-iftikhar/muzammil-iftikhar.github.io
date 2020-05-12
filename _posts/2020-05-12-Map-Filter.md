@@ -7,7 +7,7 @@ author_profile: true
 mathjax: "true"
 ---
 
-Let's talk about two more built in functions and their use with the [Lambda Expression](#https://muzammil-iftikhar.github.io/Lambda/). They are **Map** and **Filter** functions.
+Let's talk about two more built in functions and their use with the [Lambda Expression](https://muzammil-iftikhar.github.io/Lambda/). They are **Map** and **Filter** functions.
 
 ### Map function
 
@@ -49,7 +49,7 @@ list(map(square,my_list))
 [1, 100, 400, 900]
 ```
 
-This way our 'for loop' above was squeezed in a single line of code. But that square function is still multiple lines of code. Now using the power of [Lambda](#https://muzammil-iftikhar.github.io/Lambda/) with map we can squeeze those four lines of code in a single line
+This way our 'for loop' above was squeezed in a single line of code. But that square function is still multiple lines of code. Now using the power of [Lambda](https://muzammil-iftikhar.github.io/Lambda/) with map we can squeeze those four lines of code in a single line
 
 ```python
 list(map(lambda n:n**2, my_list))
