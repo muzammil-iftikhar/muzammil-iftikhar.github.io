@@ -11,8 +11,8 @@ Let's talk about two more built in functions and their use with the [Lambda Expr
 
 ### Map function
 
-Map function will map a given function over the entire list or any other iteratables.  
-Assume you want to get the sqaure of each digit in your list
+Map function will map a given function one by one over the entire list or any other iteratable.  
+Assume you want to get the square of each digit in your list
 
 ```python
 #First we define the square function
@@ -96,4 +96,4 @@ list(filter(lambda x:x%2==0,my_list))
 
 As a rule of thumb and for memorizing purposes, apply filter on functions that return only True/False like our above 'filter_even' function.
 
-So, **map** will map a function one by one on any iteratable(like list) and **filter** will map the function one by one on any itertable and it will filter only the ones where True condition holds
+So, **map** will map a function one by one on any iteratable(like list) and **filter** will map the function one by one on any iteratable and it will filter only the ones where True condition holds
