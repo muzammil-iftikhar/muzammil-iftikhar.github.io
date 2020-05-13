@@ -28,5 +28,3 @@ codekit-config.json
 _asset_bundler_cache
 _site
 Notebooks
-jekyll.py
-jekyll.tpl
