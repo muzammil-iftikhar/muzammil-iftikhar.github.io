@@ -2,6 +2,7 @@
 title:  "Map & Filter functions"
 date: 2020-05-12
 tags: [python]
+categories: [tutorial]
 excerpt: "Learn about Map & Filter functions"
 author_profile: true
 mathjax: "true"
