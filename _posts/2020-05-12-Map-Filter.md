@@ -5,7 +5,7 @@ categories: [tutorial]
 tags: [python]
 excerpt: "Learn about Map & Filter functions"
 author_profile: true
-mathjax: "true"
+mathjax: true
 ---
 
 Let's talk about two more built in functions and their use with the [Lambda Expression](https://muzammil-iftikhar.github.io/Lambda/). They are **Map** and **Filter** functions.
