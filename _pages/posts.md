@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /posts/
-title:  "Posts by Tags"
+title:  "Posts by Categories"
 author_profile: true
 ---
 
