@@ -1,6 +1,7 @@
 ---
 title:  "Map & Filter functions"
 date: 2020-05-12
+categories: [tutorial]
 tags: [python]
 excerpt: "Learn about Map & Filter functions"
 author_profile: true
