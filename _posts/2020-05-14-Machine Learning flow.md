@@ -8,12 +8,12 @@ author_profile: true
 mathjax: true
 ---
 
-The entire workflow of any supervised machine learning project can be described via 8 steps shown below:  
+The entire workflow of any supervised machine learning project can be described in 8 steps shown below:  
 
 ![Machine learning flow](/assets/images/machine_learning_flow.JPG)
 
 We will divide our every Data science & supervised Machine learning project into these eight simple steps.  
-We will get the real taste of these steps in future tutorials where we will see each step in practice
+You will get the real taste of these steps in future tutorials where we will see each step in practice so don't worry or stress on them too much for now. Just get an idea of what each step means and in future tutorials i will reference this page alot when we put each and every step in practice.
 
 **Define Data**  
 Before proceeding with any project, you first define the problem you are going to address. Is it a regression problem or a classification one ?
