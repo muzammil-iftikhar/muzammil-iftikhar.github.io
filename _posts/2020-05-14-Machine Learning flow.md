@@ -2,7 +2,7 @@
 title:  "Supervised Machine Learning"
 date: 2020-05-14
 categories: [Reading]
-tags: [machine Learning,data science]
+tags: [machine learning,data science]
 excerpt: "Read about the Supervised machine learning workflow"
 author_profile: true
 mathjax: true
@@ -10,7 +10,7 @@ mathjax: true
 
 The entire workflow of any supervised machine learning project can be described in 8 steps shown below:  
 
-![Machine learning flow](/assets/images/machine_learning_flow.JPG)
+
 
 We will divide our every Data science & supervised Machine learning project into these eight simple steps.  
 You will get the real taste of these steps in future tutorials where we will see each step in practice so don't worry or stress on them too much for now. Just get an idea of what each step means and in future tutorials i will reference this page alot when we put each and every step in practice.
