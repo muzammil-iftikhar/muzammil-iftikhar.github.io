@@ -9,6 +9,7 @@ mathjax: true
 ---
 
 The entire workflow of any supervised machine learning project can be described via 8 steps shown below:  
+
 ![Machine learning flow](https://github.com/muzammil-iftikhar/muzammil-iftikhar.github.io/blob/master/assets/images/Machine-learning-steps.JPG)
 
 We will divide our every Data science & supervised Machine learning project into these eight simple steps.  

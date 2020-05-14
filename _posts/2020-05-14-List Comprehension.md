@@ -1,7 +1,7 @@
 ---
 title:  "List Comprehensions"
 date: 2020-05-14
-categories: [tutorial]
+categories: [Tutorial]
 tags: [python]
 excerpt: "Learn about List comprehensions"
 author_profile: true
