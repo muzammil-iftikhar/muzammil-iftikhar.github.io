@@ -7,10 +7,8 @@ excerpt: "Predict the prices of Iowa houses using DecisionTreeRegressor"
 author_profile: true
 ---
 
-In this project, we will be predicting the house prices of Iowa houses. Let's get started
-
-We will be using the setps that were referenced here [SML:Supervised Machine Learning workflow](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/)
-
+In this project, we will be predicting the house prices of Iowa houses. Let's get started  
+We will be using the setps that were referenced here [SML:Supervised Machine Learning workflow](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/)  
 The data set that we are going to use is the Iowa house prices dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 
 ### Define Problem
@@ -26,34 +24,10 @@ Go ahead and download the dataset from the Kaggle link above
 
 
 ```python
-%%HTML
-<style type="text/css">
-table.dataframe td, table.dataframe th {
-    border: 1px  black solid !important;
-  color: black !important;
-}
-</style>
-<!--This is just to make dataframes inside jupyter with borders-->
-```
-
-
-<style type="text/css">
-table.dataframe td, table.dataframe th {
-    border: 1px  black solid !important;
-  color: black !important;
-}
-</style>
-<!--This is just to make dataframes inside jupyter with borders-->
-
-
-
-
-```python
 #Importing necessary libraries
 import numpy as np
 import pandas as pd
 ```
-
 
 ```python
 #Visualization libraries
@@ -61,24 +35,18 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-
 ```python
 %matplotlib inline
 sns.set()
 ```
 
-
 ```python
-iowa = pd.read_csv("C:/Users/muzam/Desktop/muzammil-iftikhar.github.io/Projects/Iowa house prices/train.csv")
+iowa = pd.read_csv("/train.csv")
 ```
-
 
 ```python
 iowa.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -247,23 +215,14 @@ iowa.head()
 <p>5 rows × 81 columns</p>
 </div>
 
-
-
 ### Exploratory Data Analysis
 
 Lets explore our data a bit and see what do we have in hand
 
-
 ```python
 len(iowa.columns)
+81
 ```
-
-
-
-
-    81
-
-
 
 There are 81 columns, for the sake of this project and for understanding purposes, we will use only following features:
 LotFrontage, LotArea, Utilities, BldgType, HouseStyle, YearBuilt, 1stFlrSF, 2ndFlrSF, BedroomAbvGr, YrSold, SaleType, SalePrice
@@ -628,7 +587,7 @@ sns.countplot(data=iowa,x='Utilities')
 
 
 
-![png](Iowa%20House%20Prices%20Prediction_files/Iowa%20House%20Prices%20Prediction_28_1.png)
+![png]("/assets/Iowa House Prices Prediction_files/Iowa House Prices Prediction_28_1.png")
 
 
 This confirms our above observation that almost all of the data points belong to single category of Utilities
