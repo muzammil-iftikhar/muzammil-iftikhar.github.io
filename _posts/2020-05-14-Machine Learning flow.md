@@ -10,7 +10,7 @@ mathjax: true
 
 The entire workflow of any supervised machine learning project can be described in nine steps shown below:  
 
-![Machine learning flow](/assets/images/machine_learning_flow.JPG)
+![Machine learning flow](/assets/images/machine_learning_flow.jpg)
 
 We will divide our every Data science & supervised Machine learning project into these eight simple steps.  
 You will get the real taste of these steps in future tutorials where we will see each step in practice so don't worry or stress on them too much for now. Just get an idea of what each step means and in future tutorials i will reference this page alot when we put each and every step in practice.
@@ -36,8 +36,8 @@ Based on the learnings from our 'Exploratory Data Analysis' phase, here:
 **Get Model**  
 We will get our model and instantiate it
 
-**Train Model**  
-We will train our model with the training dataset
+**Train or Fit Model**  
+We will train/fit our model with the training dataset
 
 **Test Model**  
 We test our model with the test dataset
