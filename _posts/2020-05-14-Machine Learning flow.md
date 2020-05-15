@@ -8,7 +8,7 @@ author_profile: true
 mathjax: true
 ---
 
-The entire workflow of any supervised machine learning project can be described in 8 steps shown below:  
+The entire workflow of any supervised machine learning project can be described in nine steps shown below:  
 
 ![Machine learning flow](/assets/images/machine_learning_flow.JPG)
 
@@ -24,10 +24,14 @@ You acquire your data from different sources. For most of our projects, we will 
 **Import Data**  
 We will import our data into python with Pandas
 
+**Exploratory Data Analysis**  
+We will explore the data both descriptively and visually here and try to get familar with our data model. Here we will also explore the relations of features with our target.
+
 **Data cleaning, Data completing, Feature engineering**  
-We will be cleaning our data by dropping the features that are not needed (if there is any)  
-We will be completing our data by either filling in the Nan/null values or dropping them altogether  
-We may need to create new features based on the existing feature set where required
+Based on the learnings from our 'Exploratory Data Analysis' phase, here:  
+    - We will be cleaning our data by dropping the features that are not needed (if there is any)  
+    - We will be completing our data by either filling in the Nan/null values or dropping them altogether  
+    - We may need to create new features based on the existing feature set where required
 
 **Get Model**  
 We will get our model and instantiate it
