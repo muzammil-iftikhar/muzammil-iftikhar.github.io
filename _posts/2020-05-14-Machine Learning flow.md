@@ -10,7 +10,7 @@ mathjax: true
 
 The entire workflow of any supervised machine learning project can be described in nine steps shown below:  
 
-![Machine learning flow](/assets/images/machine_learning_flow.JPG)
+
 
 We will divide our every Data science & supervised Machine learning project into these eight simple steps.  
 You will get the real taste of these steps in future tutorials where we will see each step in practice so don't worry or stress on them too much for now. Just get an idea of what each step means and in future tutorials i will reference this page alot when we put each and every step in practice.
@@ -29,9 +29,9 @@ We will explore the data both descriptively and visually here and try to get fam
 
 **Data cleaning, Data completing, Feature engineering**  
 Based on the learnings from our 'Exploratory Data Analysis' phase, here:  
-    - We will be cleaning our data by dropping the features that are not needed (if there is any)  
-    - We will be completing our data by either filling in the Nan/null values or dropping them altogether  
-    - We may need to create new features based on the existing feature set where required
+- We will be cleaning our data by dropping the features that are not needed (if there is any)  
+- We will be completing our data by either filling in the Nan/null values or dropping them altogether  
+- We may need to create new features based on the existing feature set where required
 
 **Get Model**  
 We will get our model and instantiate it
