@@ -8,7 +8,7 @@ author_profile: true
 ---
 
 In this project, we will be predicting the house prices of Iowa houses. Let's get started  
-We will be using the setps that were referenced here [SML:Supervised Machine Learning workflow](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/)  
+We will be using the steps that were referenced here [SML:Supervised Machine Learning workflow](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/)  
 The data set that we are going to use is the Iowa house prices dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 
 ### Define Problem
@@ -587,7 +587,7 @@ sns.countplot(data=iowa,x='Utilities')
 
 
 
-![png]("/assets/Iowa House Prices Prediction_files/Iowa House Prices Prediction_28_1.png")
+![png](/Projects/Iowa_house_prices/images/Iowa_House_Prices_Prediction_28_1.png)
 
 
 This confirms our above observation that almost all of the data points belong to single category of Utilities
