@@ -31,3 +31,4 @@ notebooks
 draw
 projects
 docker-compose.yml
+.travis.yml
