@@ -30,3 +30,4 @@ _site
 notebooks
 draw
 projects
+docker-compose.yml
