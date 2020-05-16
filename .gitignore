@@ -29,6 +29,5 @@ _asset_bundler_cache
 _site
 notebooks
 draw
-projects
+datasets
 docker-compose.yml
-.travis.yml
