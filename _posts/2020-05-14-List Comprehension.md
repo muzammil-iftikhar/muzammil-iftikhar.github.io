@@ -8,7 +8,7 @@ author_profile: true
 mathjax: true
 ---
 
-Another awesome python feature is **List Comprehension**.It is basically a one liner for loop built inside brackets
+Another awesome python feature is **List Comprehension**. It is basically a one liner for loop built inside brackets
 
 ```python
 lst = [x for x in range(10)]
