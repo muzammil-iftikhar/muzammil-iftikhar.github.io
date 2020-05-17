@@ -3,7 +3,7 @@ title:  "Project: Predicting Iowa house prices"
 date: 2020-05-17
 categories: [Project]
 tags: [machine learning,data science,python]
-excerpt: "Predicting Iowa house prices using DecisionTreeRegressor"
+excerpt: "Predicting Iowa house prices using DecisionTreeRegressor and RandomForestTreeRegressor"
 author_profile: true
 mathjax: true
 ---
@@ -711,7 +711,7 @@ iowa_feat = pd.get_dummies(iowa_feat,drop_first=True)
 
 ### Get Model
 
-We will be using the DecisionTreeRegressor model in this project. There are alot of other models out there that may generate better results and we will get our hands dirty with them in future.
+We will be experimenting with two models in this project, DecisionTreeRegressor and RandomforestTreeRegressor.
 
 ```python
 from sklearn.tree import DecisionTreeRegressor
@@ -766,7 +766,7 @@ mean_absolute_error(y_test,predictions)
 
 Which means that our predictions are on an average around 31k USD from the actual values y_test
 
-Now we can make it better by using the concept of [bias-variance tradeoff](https://muzammil-iftikhar.github.io/reading/BiasVariance-Tradeoff/). If you go and have a look at the [steps](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/), you will see that once we validate our model, we either go and get a new model or we retrain our model with different parameters to get better predictions. In this project, we will retrain our model
+Now we can make it better by using the concept of [bias-variance tradeoff](https://muzammil-iftikhar.github.io/reading/BiasVariance-Tradeoff/). If you go and have a look at the [steps](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/), you will see that once we validate our model, we either go and get a new model or we retrain our model with different parameters to get better predictions. In this project, we will do both. Lets first retrain our DecisionTreeRegressor model with different parameters and find out the most optimal value
 
 ```python
 max_leaf_nodes = [2,5,10,15,50,100,500,1000]
@@ -790,4 +790,59 @@ print(mae)
  30711.888127853883]
 ```
 
-So we get the best results when max_leaf_nodes = 100
+So we get the best results when max_leaf_nodes = 100 at which the least mae value is 27758 USD
+
+**Fitting and Validating a different model**
+
+We will now train and test a RandomForestRegressor model and match the resuls with a normal DecisionTreeRegressor model
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+```
+
+```python
+rf = RandomForestRegressor()
+```
+
+```python
+rf.fit(X_train,y_train)
+    RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+               max_features='auto', max_leaf_nodes=None,
+               min_impurity_decrease=0.0, min_impurity_split=None,
+               min_samples_leaf=1, min_samples_split=2,
+               min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=None,
+               oob_score=False, random_state=None, verbose=0, warm_start=False)
+```
+
+```python
+predictions_rf = rf.predict(X_test)
+```
+
+```python
+mean_absolute_error(y_test,predictions_rf)
+24607.287214611868
+```
+
+We can see that even without retraining our model, we still get the value that is less than the minimum we achieved on a simple DecisionTreeRegressor
+
+```python
+#Retraining our model with different parameters
+estimators = [5,10,50,100,200,250,300,350,400]
+for estimator in estimators:
+    rf = RandomForestRegressor(n_estimators=estimator)
+    rf.fit(X_train,y_train)
+    predictions_rf = rf.predict(X_test)
+    print(round(mean_absolute_error(y_test,predictions_rf)))
+
+    24511.0
+    23998.0
+    23360.0
+    23318.0
+    23421.0
+    23258.0
+    23392.0
+    23430.0
+    23302.0
+```
+
+Retraining our model gives us even much better results. At n_estimator=250, we got the value of 23258 USD
