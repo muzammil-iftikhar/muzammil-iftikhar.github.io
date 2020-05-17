@@ -2,7 +2,7 @@
 title:  "Bias Variance Tradeoff"
 date: 2020-05-17
 categories: [Reading]
-tags: [machine learning,data science]
+tags: [machine learning,data science,bias,variance,underfit,overfit]
 excerpt: "Understand the concept of underfitting vs overfitting your model"
 author_profile: true
 mathjax: true
