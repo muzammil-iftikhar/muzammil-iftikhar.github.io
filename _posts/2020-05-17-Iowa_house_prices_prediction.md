@@ -15,7 +15,6 @@ The data set that we are going to use is the Iowa house prices dataset from [Kag
 ### Define Problem
 
 Since we are to predict the house prices, it is going to be a regression problem.  
-Read about [Regression vs Classification]() here.
 
 ### Acquire Data
 
@@ -767,7 +766,7 @@ mean_absolute_error(y_test,predictions)
 
 Which means that our predictions are on an average around 31k USD from the actual values y_test
 
-Now we can make it better by using the concept of bias-variance tradeoff. If you go and have a look at the [steps](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/), you will see that once we validate our model, we either go and get a new model to we retrain our model with different parameters to get better predictions. In this project, we will retrain our model
+Now we can make it better by using the concept of [bias-variance tradeoff](https://muzammil-iftikhar.github.io/reading/BiasVariance-Tradeoff/). If you go and have a look at the [steps](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/), you will see that once we validate our model, we either go and get a new model to we retrain our model with different parameters to get better predictions. In this project, we will retrain our model
 
 ```python
 max_depth = [2,5,10,15,50,100,500]
