@@ -766,13 +766,13 @@ mean_absolute_error(y_test,predictions)
 
 Which means that our predictions are on an average around 31k USD from the actual values y_test
 
-Now we can make it better by using the concept of [bias-variance tradeoff](https://muzammil-iftikhar.github.io/reading/BiasVariance-Tradeoff/). If you go and have a look at the [steps](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/), you will see that once we validate our model, we either go and get a new model to we retrain our model with different parameters to get better predictions. In this project, we will retrain our model
+Now we can make it better by using the concept of [bias-variance tradeoff](https://muzammil-iftikhar.github.io/reading/BiasVariance-Tradeoff/). If you go and have a look at the [steps](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/), you will see that once we validate our model, we either go and get a new model or we retrain our model with different parameters to get better predictions. In this project, we will retrain our model
 
 ```python
-max_depth = [2,5,10,15,50,100,500]
+max_leaf_nodes = [2,5,10,15,50,100,500,1000]
 mae = []
-for n in max_depth:
-    dtr = DecisionTreeRegressor(max_depth=n)
+for n in max_leaf_nodes:
+    dtr = DecisionTreeRegressor(max_leaf_nodes=n)
     dtr.fit(X_train,y_train)
     predictions = dtr.predict(X_test)
     mae.append(mean_absolute_error(y_test,predictions))
@@ -780,13 +780,14 @@ for n in max_depth:
 
 ```python
 print(mae)
-    [40620.180940294726,
-     29823.564573629337,
-     29233.503839113608,
-     31147.21811601365,
-     30481.737442922375,
-     30627.96803652968,
-     31053.470319634704]
+[46104.2537919054,
+ 38867.59606292774,
+ 33675.912703601985,
+ 30371.35800783275,
+ 28651.79881073222,
+ 27758.847258634916,
+ 31273.47982211852,
+ 30711.888127853883]
 ```
 
-So we get the best results when max_depth = 10
+So we get the best results when max_leaf_nodes = 100
