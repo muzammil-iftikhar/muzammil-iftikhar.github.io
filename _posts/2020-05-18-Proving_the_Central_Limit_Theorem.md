@@ -124,8 +124,7 @@ pop_std
 ```python
 sample_sets = 100000
 sample_size = 1000
-sample_means = [population.sample(sample_size, replace=True)[
-    0].mean() for x in range(sample_sets)]
+sample_means = [population.sample(sample_size, replace=True)[0].mean() for x in range(sample_sets)]
 ```
 
 ```python
