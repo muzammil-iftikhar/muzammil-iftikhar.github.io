@@ -25,59 +25,62 @@ df = pd.DataFrame({'x': [1, 4, 5, 8, 10, 13], 'y': [3, 5, 8, 10, 15, 20]})
 df
 ```
 
-<div >
-<style scoped >
-  .dataframe tbody tr th: only - of - type {
-      vertical-align: middle; }
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-  .dataframe tbody tr th {
-      vertical-align: top; }
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-  .dataframe thead th {
-      text-align: right; }
-< / style >
-<table class = "dataframe" >
-  <thead >
-    <tr style = "text-align: right;" >
-      <th > < / th >
-      <th > x < /th >
-      <th > y < /th >
-    < / tr >
-  < / thead >
-  <tbody >
-    <tr >
-      <th > 0 < /th >
-      <td > 1 < /td >
-      <td > 3 < /td >
-    < / tr >
-    <tr >
-      <th > 1 < /th >
-      <td > 4 < /td >
-      <td > 5 < /td >
-    < / tr >
-    <tr >
-      <th > 2 < /th >
-      <td > 5 < /td >
-      <td > 8 < /td >
-    < / tr >
-    <tr >
-      <th > 3 < /th >
-      <td > 8 < /td >
-      <td > 10 < /td >
-    < / tr >
-    <tr >
-      <th > 4 < /th >
-      <td > 10 < /td >
-      <td > 15 < /td >
-    < / tr >
-    <tr >
-      <th > 5 < /th >
-      <td > 13 < /td >
-      <td > 20 < /td >
-    < / tr >
-  < / tbody >
-< / table >
-< / div >
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>13</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 ```python
@@ -93,39 +96,42 @@ sns.lmplot('x', 'y', df)
 df.corr()
 ```
 
-<div >
-<style scoped >
-  .dataframe tbody tr th: only - of - type {
-      vertical-align: middle; }
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-  .dataframe tbody tr th {
-      vertical-align: top; }
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-  .dataframe thead th {
-      text-align: right; }
-< / style >
-<table class = "dataframe" >
-  <thead >
-    <tr style = "text-align: right;" >
-      <th > < / th >
-      <th > x < /th >
-      <th > y < /th >
-    < / tr >
-  < / thead >
-  <tbody >
-    <tr >
-      <th > x < /th >
-      <td > 1.000000 < /td >
-      <td > 0.981795 < /td >
-    < / tr >
-    <tr >
-      <th > y < /th >
-      <td > 0.981795 < /td >
-      <td > 1.000000 < /td >
-    < / tr >
-  < / tbody >
-< / table >
-< / div >
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>x</th>
+      <td>1.000000</td>
+      <td>0.981795</td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td>0.981795</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 We can see that the correlation is so strong between x and y. Let us now place an outlier in the direction of the dependent variable and see the effect of it on the correlation value
 
@@ -139,64 +145,67 @@ df = pd.DataFrame({'x': [1, 4, 5, 8, 10, 13, 100],
 df
 ```
 
-<div >
-<style scoped >
-  .dataframe tbody tr th: only - of - type {
-      vertical-align: middle; }
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-  .dataframe tbody tr th {
-      vertical-align: top; }
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-  .dataframe thead th {
-      text-align: right; }
-< / style >
-<table class = "dataframe" >
-  <thead >
-    <tr style = "text-align: right;" >
-      <th > < / th >
-      <th > x < /th >
-      <th > y < /th >
-    < / tr >
-  < / thead >
-  <tbody >
-    <tr >
-      <th > 0 < /th >
-      <td > 1 < /td >
-      <td > 3 < /td >
-    < / tr >
-    <tr >
-      <th > 1 < /th >
-      <td > 4 < /td >
-      <td > 5 < /td >
-    < / tr >
-    <tr >
-      <th > 2 < /th >
-      <td > 5 < /td >
-      <td > 8 < /td >
-    < / tr >
-    <tr >
-      <th > 3 < /th >
-      <td > 8 < /td >
-      <td > 10 < /td >
-    < / tr >
-    <tr >
-      <th > 4 < /th >
-      <td > 10 < /td >
-      <td > 15 < /td >
-    < / tr >
-    <tr >
-      <th > 5 < /th >
-      <td > 13 < /td >
-      <td > 20 < /td >
-    < / tr >
-    <tr >
-      <th > 6 < /th >
-      <td > 100 < /td >
-      <td > 5 < /td >
-    < / tr >
-  < / tbody >
-< / table >
-< / div >
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>13</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>100</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ```python
 sns.lmplot('x', 'y', df)
@@ -210,38 +219,41 @@ sns.lmplot('x', 'y', df)
 df.corr()
 ```
 
-<div >
-<style scoped >
-  .dataframe tbody tr th: only - of - type {
-      vertical-align: middle; }
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-  .dataframe tbody tr th {
-      vertical-align: top; }
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-  .dataframe thead th {
-      text-align: right; }
-< / style >
-<table class = "dataframe" >
-  <thead >
-    <tr style = "text-align: right;" >
-      <th > < / th >
-      <th > x < /th >
-      <th > y < /th >
-    < / tr >
-  < / thead >
-  <tbody >
-    <tr >
-      <th > x < /th >
-      <td > 1.000000 < /td >
-      <td > -0.211966 < /td >
-    < / tr >
-    <tr >
-      <th > y < /th >
-      <td > -0.211966 < /td >
-      <td > 1.000000 < /td >
-    < / tr >
-  < / tbody >
-< / table >
-< / div >
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>x</th>
+      <td>1.000000</td>
+      <td>-0.211966</td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td>-0.211966</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 The relation has gone from a very strong positive relation to a very weak negative relation. Hence, it is always a good idea to investigate those outliers in case of small datasets, they may point to a potential opportunity or in worst case, just drop them altogether.
