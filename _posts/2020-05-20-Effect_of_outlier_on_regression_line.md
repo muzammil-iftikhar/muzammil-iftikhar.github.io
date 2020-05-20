@@ -256,4 +256,4 @@ df.corr()
 </table>
 </div>
 
-The relation has gone from a very strong positive relation to a very weak negative relation. Hence, it is always a good idea to investigate those outliers in case of small datasets, they may point to a potential opportunity or in worst case, just drop them altogether.
+The relation has gone from a very strong positive relation to a very weak negative relation. Hence, it is always a good idea to investigate those outliers in case of small datasets, they may point to a potential opportunity or in worst case, just drop them altogether as they can adversely affect the performance of your regression model.
