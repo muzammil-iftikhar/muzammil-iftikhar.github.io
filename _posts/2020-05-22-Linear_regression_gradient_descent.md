@@ -93,9 +93,9 @@ We can keep our learning rate $$\alpha$$ always fixed and our gradient descent e
 
 Replacing our linear regression's cost/MSE function in the gradient descent equation above and solving for the two equations $$\theta_{0}$$ and $$\theta_{1}$$
 
-![Fig 4](/projects/Linear_regression_gradient_descent/images/fig4.jpg)
+![Fig 4](/projects/Linear_regression_gradient_descent/images/fig4.JPG)
 
-![Fig 5](/projects/Linear_regression_gradient_descent/images/fig5.jpg)
+![Fig 5](/projects/Linear_regression_gradient_descent/images/fig5.JPG)
 
 #### Multivariate linear regression
 
