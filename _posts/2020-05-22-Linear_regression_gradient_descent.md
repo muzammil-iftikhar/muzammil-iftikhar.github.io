@@ -95,6 +95,8 @@ Replacing our linear regression's cost/MSE function in the gradient descent equa
 
 ![Fig 4](/projects/Linear_regression_gradient_descent/images/fig4.JPG)
 
+Solving for $$\theta_{1}$$
+
 ![Fig 5](/projects/Linear_regression_gradient_descent/images/fig5.JPG)
 
 #### Multivariate linear regression
@@ -134,4 +136,4 @@ $$\theta _{j} =\theta _{j} -\frac{\alpha }{m}\sum ^{m}_{i=1}\left( h\left( x^{( 
 Do note that we have included $$x_{0}$$ just to make our both vectors of same size i.e. $$n+1$$. Value of $$x_{0}$$ will always be 1.  
 Here $$m$$ is the total number of training set examples and $$n$$ is the total number of features per training example.
 
-*Credits*: I would like to give the credit to [Andrew Ng](https://www.coursera.org/learn/machine-learning) for his awesome course. If you like reading this article, go and enroll yourself in the this course, you will love it.
+*Credits*: I would like to give the credit to [Andrew Ng](https://www.coursera.org/learn/machine-learning) for his awesome course. If you like reading this article, go and enroll yourself in this course, you will love it.
