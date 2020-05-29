@@ -95,7 +95,7 @@ Replacing our linear regression's cost/MSE function in the gradient descent equa
 
 ![Fig 4](/projects/Linear_regression_gradient_descent/images/fig4.JPG)
 
-Solving for $$\theta_{1}$$
+Solving for $$\theta_{1}$$ :
 
 ![Fig 5](/projects/Linear_regression_gradient_descent/images/fig5.JPG)
 
