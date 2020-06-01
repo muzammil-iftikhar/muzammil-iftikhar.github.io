@@ -10,7 +10,14 @@ mathjax: true
 
 In this project, we will be predicting the house prices of Iowa houses. Let's get started  
 We will be using the steps that were referenced here [SML:Supervised Machine Learning workflow](https://muzammil-iftikhar.github.io/reading/Machine-Learning-flow/)  
-The data set that we are going to use is the Iowa house prices dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
+The data set that we are going to use is the Iowa house prices dataset from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data).  
+Highlights:
+* Exploratory data analysis using Pandas
+* Visualizing data using matplotlib and seaborn
+* Imputing null values
+* Training DecisionTreeRegressor and retraining with different `max_leaf_nodes` values
+* Applying the concept of Bias-Variance Tradeoff
+* Fitting and validating RandomForestRegressor and comparing the results with that of DecisionTreeRegressor
 
 ### Define Problem
 
