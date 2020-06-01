@@ -1,6 +1,6 @@
 ---
 title:  "Project: Analyzing 911 calls data"
-date: 2020-06-01
+date: 2020-05-16
 categories: [Project]
 tags: [machine learning,data science,python]
 excerpt: "Analyzing the 911 calls data using Pandas, Numpy, Matplotlib and Seaborn"
