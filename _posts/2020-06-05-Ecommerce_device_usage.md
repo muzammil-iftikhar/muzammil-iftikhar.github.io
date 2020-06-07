@@ -13,6 +13,7 @@ For this project, we are going to use this [dataset](https://www.kaggle.com/iyad
 Highlights:
 * Exploratory data analysis
 * Creating pipeline
+* Using LinearRegression model
 * Using cross-validation scores to measure model performance
 
 ```python
