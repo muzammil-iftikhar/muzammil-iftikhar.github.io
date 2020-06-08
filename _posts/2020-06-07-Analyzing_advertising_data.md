@@ -502,7 +502,7 @@ print(classification_report(y_valid,predictions))
     weighted avg       0.94      0.94      0.94       200
 ```
 
-Great, using XGBoost classifier, we were able to achieve 94% accuracy. Let us now test using the `RandomForest` flavour of XGBoost.
+Great, using XGBoost classifier, we were able to achieve 94% accuracy. Let us now test using the `RandomForest` flavor of XGBoost.
 
 ```python
 model = XGBRFClassifier (n_estimators=1000,learning_rate=0.05,n_jobs=4)
