@@ -1,5 +1,5 @@
 ---
-title:  "Project: Predicting amount spent by ecommerce customers"
+title:  "Project: Predicting Amount spent"
 date: 2020-06-05
 categories: [Project]
 tags: [machine learning,data science,python]

@@ -1,5 +1,5 @@
 ---
-title:  "Project: Predicting if a customer will click on Ad or not"
+title:  "Project: Predicting Ad clicks"
 date: 2020-06-07
 categories: [Project]
 tags: [machine learning,data science,python]
