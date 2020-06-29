@@ -1,9 +1,9 @@
 ---
-title:  "Webscraping sites with infinite scrolls"
+title:  "Webscraping sites with infinite scroll"
 date: 2020-06-29
 categories: [Tutorial]
 tags: [machine learning, data science, python, webscraping]
-excerpt: "Learn how to scrape websites that have infinite scrolls"
+excerpt: "Learn how to scrape websites that have infinite scrolling"
 author_profile: true
 mathjax: true
 ---
@@ -71,4 +71,4 @@ if next_page:
 scrapy crawl quote -o dataset.csv
 ```
 
-You can get the complete code [here](/projects/Scraping_infinite_scrolls/quote.py).
+You can get the complete code [here](/projects/Scraping_infinite_scroll/quote.py).
