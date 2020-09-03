@@ -7,7 +7,7 @@ excerpt: "Predicting the breast tumor as either malignant or benign based on giv
 author_profile: true
 mathjax: true
 ---
-In this project, we are going to use the built - in breast cancer dataset to predict whether the tumor is *malignant* or *benign*.
+In this project, we are going to use the built-in breast cancer dataset to predict whether the tumor is *malignant* or *benign*.
 
 Highlights:
 * Using Support vector machine model for predictions
