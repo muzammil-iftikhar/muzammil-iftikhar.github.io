@@ -1,11 +1,13 @@
 ---
-layout: archive
+layout: posts
 permalink: /posts/
-title:  "Posts by Categories"
+title: "Posts by Categories"
 author_profile: true
+layout: single
 ---
 
 {% for category in site.categories %}
+
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
