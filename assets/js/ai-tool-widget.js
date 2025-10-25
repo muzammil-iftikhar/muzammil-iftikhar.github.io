@@ -119,9 +119,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Try to find the location element first (Pakistan)
     const locationElement = document.querySelector('.author__content .p-locality');
+    // Track whether we specifically found the location so we can insert
+    // a small separator between it and the widget.
+    let targetIsLocation = false;
 
     if (locationElement) {
       targetElement = locationElement;
+      targetIsLocation = true;
       console.log('Found location element:', locationElement);
     } else {
       // Fallback to author content
@@ -149,8 +153,25 @@ document.addEventListener('DOMContentLoaded', function() {
       const widgetHTML = createWidgetHTML(tool);
       console.log('Widget HTML:', widgetHTML);
 
-      // Insert widget at the determined position
-      targetElement.insertAdjacentHTML(insertPosition, widgetHTML);
+      // If we found the exact location (e.g. the "Pakistan" element),
+      // insert a subtle separator line before adding the widget so it
+      // appears visually separated.
+      if (targetIsLocation && insertPosition === 'afterend') {
+        const separatorHTML = '<div class="ai-tool-widget-separator" aria-hidden="true"></div>';
+        targetElement.insertAdjacentHTML('afterend', separatorHTML);
+        // Insert widget after the separator we just added
+        const separatorElement = targetElement.nextElementSibling;
+        if (separatorElement) {
+          separatorElement.insertAdjacentHTML('afterend', widgetHTML);
+        } else {
+          // Fallback: insert widget directly after target
+          targetElement.insertAdjacentHTML('afterend', widgetHTML);
+        }
+      } else {
+        // Insert widget at the determined position for other cases
+        targetElement.insertAdjacentHTML(insertPosition, widgetHTML);
+      }
+
       console.log('Widget inserted after:', targetElement);
 
       // Store current tool info for potential updates
