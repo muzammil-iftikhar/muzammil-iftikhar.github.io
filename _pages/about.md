@@ -3,9 +3,9 @@ title: "About"
 permalink: /about/
 layout: single
 author_profile: true
+classes: wide about-page
 ---
 
-<div class="about-content">
 When i am not sleeping, i am AI dreaming :)
 
 Exploring the frontier of AI tools, from conversational interfaces to agentic systems and MCP server adventures! 🤖✨
@@ -25,4 +25,3 @@ Here you'll find:
 I write to make AI tools less intimidating and more useful — if you're looking to level up your AI tool game or collaborate on cool experiments, say hello via GitHub or email.
 
 Stay curious — the AI tool explosion is just getting started, and I'm here to try everything so you don't have to! 🚀
-</div>
