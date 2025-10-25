@@ -112,15 +112,15 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
 
-    // Try to find the author content container first
-    const authorContent = document.querySelector('.author__content');
+    // Try to find the location element first (Pakistan)
+    const locationElement = document.querySelector('.author__content .p-locality');
 
-    if (authorContent) {
+    if (locationElement) {
       const tool = getAIToolOfWeek();
       const widgetHTML = createWidgetHTML(tool);
 
-      // Append widget to the end of author content
-      authorContent.insertAdjacentHTML('beforeend', widgetHTML);
+      // Insert widget after the location element
+      locationElement.insertAdjacentHTML('afterend', widgetHTML);
 
       // Store current tool info for potential updates
       window.currentAITool = tool;
