@@ -261,6 +261,15 @@ search: false
   transform: translateX(2px);
 }
 
+/* Separator line before AI Tool widget */
+.ai-tool-widget-separator {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  margin: 20px 0;
+  opacity: 0.6;
+}
+
 /* Responsive design */
 @media (max: 768px) {
   .ai-tool-widget {
