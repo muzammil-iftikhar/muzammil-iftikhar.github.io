@@ -13,3 +13,8 @@ search: false
   font-size: 0.85em;
   line-height: 1.6;
 }
+
+/* Hide the About page heading */
+.about-page .page__title {
+  display: none;
+}
