@@ -109,21 +109,54 @@ document.addEventListener('DOMContentLoaded', function() {
   function injectWidget() {
     // Check if widget already exists
     if (document.querySelector('.ai-tool-widget')) {
+      console.log('Widget already exists');
       return;
     }
+
+    // Try multiple selectors to find the right place
+    let targetElement = null;
+    let insertPosition = 'afterend';
 
     // Try to find the location element first (Pakistan)
     const locationElement = document.querySelector('.author__content .p-locality');
 
     if (locationElement) {
-      const tool = getAIToolOfWeek();
-      const widgetHTML = createWidgetHTML(tool);
+      targetElement = locationElement;
+      console.log('Found location element:', locationElement);
+    } else {
+      // Fallback to author content
+      const authorContent = document.querySelector('.author__content');
+      if (authorContent) {
+        targetElement = authorContent;
+        insertPosition = 'beforeend';
+        console.log('Found author content:', authorContent);
+      }
+    }
 
-      // Insert widget after the location element
-      locationElement.insertAdjacentHTML('afterend', widgetHTML);
+    // Final fallback - try sidebar
+    if (!targetElement) {
+      const sidebar = document.querySelector('.sidebar');
+      if (sidebar) {
+        targetElement = sidebar;
+        insertPosition = 'beforeend';
+        console.log('Found sidebar:', sidebar);
+      }
+    }
+
+    if (targetElement) {
+      const tool = getAIToolOfWeek();
+      console.log('Selected tool:', tool);
+      const widgetHTML = createWidgetHTML(tool);
+      console.log('Widget HTML:', widgetHTML);
+
+      // Insert widget at the determined position
+      targetElement.insertAdjacentHTML(insertPosition, widgetHTML);
+      console.log('Widget inserted after:', targetElement);
 
       // Store current tool info for potential updates
       window.currentAITool = tool;
+    } else {
+      console.error('Could not find any suitable target element for widget');
     }
   }
 
