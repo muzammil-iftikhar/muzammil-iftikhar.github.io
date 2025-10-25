@@ -7,3 +7,9 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Custom styles for About page */
+.page__content .about-content {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
