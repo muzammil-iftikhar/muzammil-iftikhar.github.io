@@ -117,16 +117,23 @@ document.addEventListener('DOMContentLoaded', function() {
     let targetElement = null;
     let insertPosition = 'afterend';
 
-    // Try to find the location element first (Pakistan)
-    const locationElement = document.querySelector('.author__content .p-locality');
+    // Try to find the location element first (Pakistan).
+    // The location `.p-locality` exists inside a list item in
+    // `_includes/author-profile.html`, so search for `.p-locality`
+    // anywhere and set the insertion target to its closest `<li>`
+    // so the separator/widget appear directly after the location entry.
+    const locationElement = document.querySelector('.p-locality');
     // Track whether we specifically found the location so we can insert
     // a small separator between it and the widget.
     let targetIsLocation = false;
 
     if (locationElement) {
-      targetElement = locationElement;
+      // Prefer the parent list item if present, otherwise use the
+      // location element itself as the insertion anchor.
+      const locationListItem = locationElement.closest('li') || locationElement;
+      targetElement = locationListItem;
       targetIsLocation = true;
-      console.log('Found location element:', locationElement);
+      console.log('Found location element (or its li):', targetElement);
     } else {
       // Fallback to author content
       const authorContent = document.querySelector('.author__content');
