@@ -109,13 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function injectWidget() {
     // Check if widget already exists
     if (document.querySelector('.ai-tool-widget')) {
-      console.log('Widget already exists');
       return;
     }
-
-    // Try multiple selectors to find the right place
-    let targetElement = null;
-    let insertPosition = 'afterend';
 
     // Try to find the location element first (Pakistan).
     // The location `.p-locality` exists inside a list item in
@@ -133,14 +128,12 @@ document.addEventListener('DOMContentLoaded', function() {
       const locationListItem = locationElement.closest('li') || locationElement;
       targetElement = locationListItem;
       targetIsLocation = true;
-      console.log('Found location element (or its li):', targetElement);
     } else {
       // Fallback to author content
       const authorContent = document.querySelector('.author__content');
       if (authorContent) {
         targetElement = authorContent;
         insertPosition = 'beforeend';
-        console.log('Found author content:', authorContent);
       }
     }
 
@@ -150,15 +143,12 @@ document.addEventListener('DOMContentLoaded', function() {
       if (sidebar) {
         targetElement = sidebar;
         insertPosition = 'beforeend';
-        console.log('Found sidebar:', sidebar);
       }
     }
 
     if (targetElement) {
       const tool = getAIToolOfWeek();
-      console.log('Selected tool:', tool);
       const widgetHTML = createWidgetHTML(tool);
-      console.log('Widget HTML:', widgetHTML);
 
       // If we found the exact location (e.g. the "Pakistan" element),
       // insert a subtle separator line before adding the widget so it
@@ -179,12 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
         targetElement.insertAdjacentHTML(insertPosition, widgetHTML);
       }
 
-      console.log('Widget inserted after:', targetElement);
-
       // Store current tool info for potential updates
       window.currentAITool = tool;
-    } else {
-      console.error('Could not find any suitable target element for widget');
     }
   }
 
