@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Function to create widget HTML
   function createWidgetHTML(tool) {
     return `
-      <div class="ai-tool-widget" style="background: ${tool.gradient}">
+      <div class="ai-tool-widget">
         <div class="ai-tool-widget-header">
           <div class="ai-tool-widget-icon">${tool.icon}</div>
           <div class="ai-tool-widget-title">AI Tool of the Week</div>
@@ -107,6 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to inject widget into sidebar
   function injectWidget() {
+    // Check if widget already exists
+    if (document.querySelector('.ai-tool-widget')) {
+      return;
+    }
+
     const targetSelector = '.sidebar .author__urls-wrapper';
     const targetElement = document.querySelector(targetSelector);
 
@@ -124,9 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Inject widget when DOM is ready
   injectWidget();
-
-  // Also inject after page loads (for dynamic content)
-  setTimeout(injectWidget, 1000);
 
   // Make it globally accessible for manual updates
   window.updateAIToolWidget = function() {
