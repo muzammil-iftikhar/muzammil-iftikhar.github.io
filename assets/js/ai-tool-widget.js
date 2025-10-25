@@ -119,11 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const tool = getAIToolOfWeek();
       const widgetHTML = createWidgetHTML(tool);
 
-      // Create separator line HTML
-      const separatorHTML = '<div class="ai-tool-widget-separator"></div>';
-
-      // Insert separator and widget after the location element
-      locationElement.insertAdjacentHTML('afterend', separatorHTML + widgetHTML);
+      // Insert widget after the location element
+      locationElement.insertAdjacentHTML('afterend', widgetHTML);
 
       // Store current tool info for potential updates
       window.currentAITool = tool;
