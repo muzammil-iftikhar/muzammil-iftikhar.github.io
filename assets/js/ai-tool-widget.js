@@ -112,15 +112,15 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
 
-    const targetSelector = '.sidebar .author__urls-wrapper';
-    const targetElement = document.querySelector(targetSelector);
+    // Try to find the author content container first
+    const authorContent = document.querySelector('.author__content');
 
-    if (targetElement) {
+    if (authorContent) {
       const tool = getAIToolOfWeek();
       const widgetHTML = createWidgetHTML(tool);
 
-      // Insert widget before the author URLs
-      targetElement.insertAdjacentHTML('beforebegin', widgetHTML);
+      // Append widget to the end of author content
+      authorContent.insertAdjacentHTML('beforeend', widgetHTML);
 
       // Store current tool info for potential updates
       window.currentAITool = tool;

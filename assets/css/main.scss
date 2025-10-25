@@ -143,11 +143,11 @@ search: false
 /* AI Tool of the Week Widget */
 .ai-tool-widget {
   background: linear-gradient(135deg, #5e616c 0%, #3d4046 50%, #2d2f35 100%);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 0 20px 0;
   color: white;
-  box-shadow: 0 8px 25px rgba(94, 97, 108, 0.3);
+  box-shadow: 0 6px 20px rgba(94, 97, 108, 0.25);
   position: relative;
   overflow: hidden;
 }
@@ -171,28 +171,28 @@ search: false
 .ai-tool-widget-header {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   position: relative;
   z-index: 1;
 }
 
 .ai-tool-widget-icon {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 12px;
-  font-size: 20px;
+  margin-right: 10px;
+  font-size: 16px;
 }
 
 .ai-tool-widget-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   opacity: 0.9;
 }
 
@@ -202,31 +202,31 @@ search: false
 }
 
 .ai-tool-name {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.3;
 }
 
 .ai-tool-description {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.4;
   opacity: 0.9;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .ai-tool-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 15px;
+  gap: 5px;
+  margin-bottom: 12px;
 }
 
 .ai-tool-tag {
   background: rgba(255, 255, 255, 0.2);
-  padding: 4px 10px;
-  border-radius: 15px;
-  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
   font-weight: 500;
   backdrop-filter: blur(10px);
 }
@@ -237,9 +237,9 @@ search: false
   background: rgba(255, 255, 255, 0.2);
   color: white;
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 11px;
   font-weight: 600;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
